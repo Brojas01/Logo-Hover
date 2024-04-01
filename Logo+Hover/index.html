@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Logo + Hover</title>
+</head>
+
+<body>
+
+    <div class="contenedor1">
+        <button onclick="abrirNuevaPestana1()" class="boton1"></button>
+        <span class="texto-oculto1">Facebook</span>
+    </div>
+
+    <div class="contenedor2">
+        <button onclick="abrirNuevaPestana2()" class="boton2"></button>
+        <span class="texto-oculto2">Instagram</span>
+    </div>
+
+    <div class="contenedor3">
+        <button onclick="abrirNuevaPestana3()" class="boton3"></button>
+        <span class="texto-oculto3">Correo</span>
+    </div>
+
+
+
+    <!-- script js -->
+
+    <script>
+
+        function abrirNuevaPestana1() {
+            var url = "https://web.facebook.com/daem.santabarbara?_rdc=1&_rdr";
+            window.open(url, "_blank");
+        }
+
+        function abrirNuevaPestana2() {
+            var url = "https://www.instagram.com/daemsantabarbara/";
+            window.open(url, "_blank");
+        }
+
+        function abrirNuevaPestana3() {
+            var url = "https://www.google.com/intl/es-419/gmail/about/";
+            window.open(url, "_blank");
+        }
+
+    </script>
+
+    <!-- fin script -->
+</body>
+
+</html>
